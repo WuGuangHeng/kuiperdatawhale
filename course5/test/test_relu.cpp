@@ -38,7 +38,10 @@ TEST(test_registry, registry2) {
   ASSERT_EQ(registry1, registry2);
   LayerRegisterer::RegisterCreator("test_type", MyTestCreator);
   LayerRegisterer::CreateRegistry registry3 = LayerRegisterer::Registry();
-  ASSERT_EQ(registry3.size(), 2);
+  for (const auto &item : registry3) {
+    LOG(INFO) << item.first;
+  }
+  ASSERT_EQ(registry3.size(), 3); // 3是因为前面已经注册了两个算子: nn.Sigmoid, nn.ReLU
   ASSERT_NE(registry3.find("test_type"), registry3.end());
 }
 

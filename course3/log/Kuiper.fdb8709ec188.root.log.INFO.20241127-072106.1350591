@@ -1,0 +1,84 @@
+Log file created at: 2024/11/27 07:21:06
+Running on machine: fdb8709ec188
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20241127 07:21:06.607039 1350591 main.cpp:15] Start test...
+I20241127 07:21:06.611646 1350591 test_ir.cpp:34] pnnx_input_0
+I20241127 07:21:06.611747 1350591 test_ir.cpp:34] linear
+I20241127 07:21:06.611758 1350591 test_ir.cpp:34] F.sigmoid_0
+I20241127 07:21:06.611766 1350591 test_ir.cpp:34] pnnx_output_0
+I20241127 07:21:06.611965 1350591 test_ir.cpp:53] OP Name: pnnx_input_0
+I20241127 07:21:06.611982 1350591 test_ir.cpp:54] OP Inputs
+I20241127 07:21:06.611991 1350591 test_ir.cpp:60] OP Output
+I20241127 07:21:06.612000 1350591 test_ir.cpp:62] Output name: 0 shape: 1 x 32
+I20241127 07:21:06.612012 1350591 test_ir.cpp:65] ---------------------------------------------
+I20241127 07:21:06.612020 1350591 test_ir.cpp:53] OP Name: linear
+I20241127 07:21:06.612028 1350591 test_ir.cpp:54] OP Inputs
+I20241127 07:21:06.612036 1350591 test_ir.cpp:56] Input name: 0 shape: 1 x 32
+I20241127 07:21:06.612046 1350591 test_ir.cpp:60] OP Output
+I20241127 07:21:06.612053 1350591 test_ir.cpp:62] Output name: 1 shape: 1 x 128
+I20241127 07:21:06.612061 1350591 test_ir.cpp:65] ---------------------------------------------
+I20241127 07:21:06.612069 1350591 test_ir.cpp:53] OP Name: F.sigmoid_0
+I20241127 07:21:06.612076 1350591 test_ir.cpp:54] OP Inputs
+I20241127 07:21:06.612084 1350591 test_ir.cpp:56] Input name: 1 shape: 1 x 128
+I20241127 07:21:06.612093 1350591 test_ir.cpp:60] OP Output
+I20241127 07:21:06.612100 1350591 test_ir.cpp:62] Output name: 2 shape: 1 x 128
+I20241127 07:21:06.612109 1350591 test_ir.cpp:65] ---------------------------------------------
+I20241127 07:21:06.612118 1350591 test_ir.cpp:53] OP Name: pnnx_output_0
+I20241127 07:21:06.612125 1350591 test_ir.cpp:54] OP Inputs
+I20241127 07:21:06.612134 1350591 test_ir.cpp:56] Input name: 2 shape: 1 x 128
+I20241127 07:21:06.612143 1350591 test_ir.cpp:60] OP Output
+I20241127 07:21:06.612150 1350591 test_ir.cpp:65] ---------------------------------------------
+I20241127 07:21:06.612259 1350591 test_ir.cpp:87] OP Name: linear
+I20241127 07:21:06.612272 1350591 test_ir.cpp:88] OP Inputs
+I20241127 07:21:06.612280 1350591 test_ir.cpp:90] Input name: 0 shape: 1 x 32
+I20241127 07:21:06.612291 1350591 test_ir.cpp:94] OP Output
+I20241127 07:21:06.612300 1350591 test_ir.cpp:96] Output name: 1 shape: 1 x 128
+I20241127 07:21:06.612313 1350591 test_ir.cpp:100] Params
+I20241127 07:21:06.612321 1350591 test_ir.cpp:102] bias type 1
+I20241127 07:21:06.612330 1350591 test_ir.cpp:102] in_features type 2
+I20241127 07:21:06.612339 1350591 test_ir.cpp:102] out_features type 2
+I20241127 07:21:06.612346 1350591 test_ir.cpp:105] Weight: 
+I20241127 07:21:06.612354 1350591 test_ir.cpp:107] bias : 128 type 1
+I20241127 07:21:06.612363 1350591 test_ir.cpp:107] weight : 128 x 32 type 1
+I20241127 07:21:06.612372 1350591 test_ir.cpp:110] ---------------------------------------------
+I20241127 07:21:06.612470 1350591 test_ir.cpp:128] Operand Name: #0
+I20241127 07:21:06.612483 1350591 test_ir.cpp:129] Customers: 
+I20241127 07:21:06.612491 1350591 test_ir.cpp:131] linear
+I20241127 07:21:06.612499 1350591 test_ir.cpp:134] Producer: pnnx_input_0
+I20241127 07:21:06.612507 1350591 test_ir.cpp:128] Operand Name: #1
+I20241127 07:21:06.612516 1350591 test_ir.cpp:129] Customers: 
+I20241127 07:21:06.612524 1350591 test_ir.cpp:131] F.sigmoid_0
+I20241127 07:21:06.612532 1350591 test_ir.cpp:134] Producer: linear
+I20241127 07:21:06.612542 1350591 test_ir.cpp:128] Operand Name: #2
+I20241127 07:21:06.612550 1350591 test_ir.cpp:129] Customers: 
+I20241127 07:21:06.612560 1350591 test_ir.cpp:131] pnnx_output_0
+I20241127 07:21:06.612567 1350591 test_ir.cpp:134] Producer: F.sigmoid_0
+I20241127 07:21:06.612752 1350591 test_ir.cpp:150] op name: pnnx_input_0 type: pnnx.Input
+I20241127 07:21:06.612775 1350591 test_ir.cpp:151] attribute:
+I20241127 07:21:06.612784 1350591 test_ir.cpp:158] inputs: 
+I20241127 07:21:06.612792 1350591 test_ir.cpp:164] outputs: 
+I20241127 07:21:06.612800 1350591 test_ir.cpp:166] name: linear
+I20241127 07:21:06.612809 1350591 test_ir.cpp:168] --------------------------------------
+I20241127 07:21:06.612818 1350591 test_ir.cpp:150] op name: linear type: nn.Linear
+I20241127 07:21:06.612825 1350591 test_ir.cpp:151] attribute:
+I20241127 07:21:06.613117 1350591 test_ir.cpp:153] bias type: 1 shape: 128
+I20241127 07:21:06.613137 1350591 test_ir.cpp:153] weight type: 1 shape: 128 x 32
+I20241127 07:21:06.613148 1350591 test_ir.cpp:158] inputs: 
+I20241127 07:21:06.613157 1350591 test_ir.cpp:160] name: pnnx_input_0 shape: 1 x 32
+I20241127 07:21:06.613165 1350591 test_ir.cpp:164] outputs: 
+I20241127 07:21:06.613173 1350591 test_ir.cpp:166] name: F.sigmoid_0
+I20241127 07:21:06.613181 1350591 test_ir.cpp:168] --------------------------------------
+I20241127 07:21:06.613189 1350591 test_ir.cpp:150] op name: F.sigmoid_0 type: F.sigmoid
+I20241127 07:21:06.613198 1350591 test_ir.cpp:151] attribute:
+I20241127 07:21:06.613206 1350591 test_ir.cpp:158] inputs: 
+I20241127 07:21:06.613214 1350591 test_ir.cpp:160] name: linear shape: 1 x 128
+I20241127 07:21:06.613222 1350591 test_ir.cpp:164] outputs: 
+I20241127 07:21:06.613231 1350591 test_ir.cpp:166] name: pnnx_output_0
+I20241127 07:21:06.613238 1350591 test_ir.cpp:168] --------------------------------------
+I20241127 07:21:06.613246 1350591 test_ir.cpp:150] op name: pnnx_output_0 type: pnnx.Output
+I20241127 07:21:06.613255 1350591 test_ir.cpp:151] attribute:
+I20241127 07:21:06.613263 1350591 test_ir.cpp:158] inputs: 
+I20241127 07:21:06.613272 1350591 test_ir.cpp:160] name: F.sigmoid_0 shape: 1 x 128
+I20241127 07:21:06.613282 1350591 test_ir.cpp:164] outputs: 
+I20241127 07:21:06.613291 1350591 test_ir.cpp:168] --------------------------------------

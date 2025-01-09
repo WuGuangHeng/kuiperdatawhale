@@ -92,7 +92,8 @@ InferStatus ExpressionLayer::Forward(
     } else {
       // process operation
       const int32_t op = token_node->num_index;
-      if (op != int(TokenType::TokenAdd) && op != int(TokenType::TokenMul)) {
+      if (op != int(TokenType::TokenAdd) && op != int(TokenType::TokenMul) &&
+          op != int(TokenType::TokenSin)) {
         LOG(FATAL) << "Unknown operator type: " << op;
       }
       CHECK(op_stack.size() >= 2) << "The number of operand is less than two";
@@ -109,7 +110,10 @@ InferStatus ExpressionLayer::Forward(
           << "The second operand doesn't have appropriate number of tensors, "
              "which need "
           << batch_size;
-      op_stack.pop();
+      if (op != int(TokenType::TokenSin)) {
+        op_stack.pop();
+      }
+      
 
       std::vector<std::shared_ptr<Tensor<float>>> output_token_nodes(
           batch_size);
@@ -121,6 +125,9 @@ InferStatus ExpressionLayer::Forward(
         } else if (op == int(TokenType::TokenMul)) {
           output_token_nodes.at(i) =
               TensorElementMultiply(input_node1.at(i), input_node2.at(i));
+        } else if (op == int(TokenType::TokenSin)) {
+          output_token_nodes.at(i) =
+              TensorElementSin(input_node1.at(i));
         } else {
           LOG(FATAL) << "Unknown operator type: " << op;
         }

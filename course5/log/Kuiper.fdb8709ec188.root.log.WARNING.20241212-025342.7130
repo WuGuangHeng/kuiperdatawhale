@@ -1,0 +1,5 @@
+Log file created at: 2024/12/12 02:53:42
+Running on machine: fdb8709ec188
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E20241212 02:53:42.248929  7130 sigmoid.cpp:68] The output tensor array in the sigmoid layer has an empty tensor 0 th

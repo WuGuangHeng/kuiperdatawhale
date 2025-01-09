@@ -1,0 +1,26 @@
+Log file created at: 2024/11/28 03:19:58
+Running on machine: fdb8709ec188
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20241128 03:19:58.734114 1973204 main.cpp:15] Start test...
+I20241128 03:19:58.738531 1973204 test_topo.cpp:57] operator name: pnnx_input_0
+I20241128 03:19:58.738752 1973204 test_topo.cpp:59] output: op1
+I20241128 03:19:58.738859 1973204 test_topo.cpp:61] -------------------------
+I20241128 03:19:58.738963 1973204 test_topo.cpp:57] operator name: op1
+I20241128 03:19:58.739041 1973204 test_topo.cpp:59] output: op3
+I20241128 03:19:58.739109 1973204 test_topo.cpp:61] -------------------------
+I20241128 03:19:58.739764 1973204 test_topo.cpp:57] operator name: op3
+I20241128 03:19:58.739935 1973204 test_topo.cpp:59] output: op4
+I20241128 03:19:58.740036 1973204 test_topo.cpp:59] output: op5
+I20241128 03:19:58.740134 1973204 test_topo.cpp:61] -------------------------
+I20241128 03:19:58.740212 1973204 test_topo.cpp:57] operator name: op5
+I20241128 03:19:58.740284 1973204 test_topo.cpp:59] output: pnnx_expr_0
+I20241128 03:19:58.740360 1973204 test_topo.cpp:61] -------------------------
+I20241128 03:19:58.740422 1973204 test_topo.cpp:57] operator name: op4
+I20241128 03:19:58.740482 1973204 test_topo.cpp:59] output: pnnx_expr_0
+I20241128 03:19:58.740537 1973204 test_topo.cpp:61] -------------------------
+I20241128 03:19:58.740609 1973204 test_topo.cpp:57] operator name: pnnx_expr_0
+I20241128 03:19:58.740726 1973204 test_topo.cpp:59] output: pnnx_output_0
+I20241128 03:19:58.740794 1973204 test_topo.cpp:61] -------------------------
+I20241128 03:19:58.740857 1973204 test_topo.cpp:57] operator name: pnnx_output_0
+I20241128 03:19:58.740942 1973204 test_topo.cpp:61] -------------------------

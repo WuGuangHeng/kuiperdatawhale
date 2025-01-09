@@ -1,0 +1,9 @@
+Log file created at: 2024/11/18 08:37:01
+Running on machine: fdb8709ec188
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20241118 08:37:01.723003 3047842 main.cpp:15] Start test...
+I20241118 08:37:01.723770 3047842 test_ir.cpp:34] pnnx_input_0
+I20241118 08:37:01.723788 3047842 test_ir.cpp:34] linear
+I20241118 08:37:01.723793 3047842 test_ir.cpp:34] F.sigmoid_0
+I20241118 08:37:01.723798 3047842 test_ir.cpp:34] pnnx_output_0

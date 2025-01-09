@@ -18,23 +18,23 @@ Tensor<float>::Tensor(uint32_t channels, uint32_t rows, uint32_t cols) {
     this->raw_shapes_ = std::vector<uint32_t>{channels, rows, cols};
   }
 }
-
+//一维张量
 Tensor<float>::Tensor(uint32_t size) {
   data_ = arma::fcube(1, size, 1);
   this->raw_shapes_ = std::vector<uint32_t>{size};
 }
-
+//二维张量
 Tensor<float>::Tensor(uint32_t rows, uint32_t cols) {
   data_ = arma::fcube(rows, cols, 1);
   this->raw_shapes_ = std::vector<uint32_t>{rows, cols};
 }
-
+//一维、二维、三维张量
 Tensor<float>::Tensor(const std::vector<uint32_t>& shapes) {
   CHECK(!shapes.empty() && shapes.size() <= 3);
 
   uint32_t remaining = 3 - shapes.size();
-  std::vector<uint32_t> shapes_(3, 1);
-  std::copy(shapes.begin(), shapes.end(), shapes_.begin() + remaining);
+  std::vector<uint32_t> shapes_(3, 1); //全部初始化为1
+  std::copy(shapes.begin(), shapes.end(), shapes_.begin() + remaining); //为什么要这样写？shapes不一定是3维的
 
   uint32_t channels = shapes_.at(0);
   uint32_t rows = shapes_.at(1);
@@ -49,21 +49,21 @@ Tensor<float>::Tensor(const std::vector<uint32_t>& shapes) {
     this->raw_shapes_ = std::vector<uint32_t>{channels, rows, cols};
   }
 }
-
+// 拷贝构造函数：深拷贝，资源复制
 Tensor<float>::Tensor(const Tensor& tensor) {
   if (this != &tensor) {
     this->data_ = tensor.data_;
     this->raw_shapes_ = tensor.raw_shapes_;
   }
 }
-
-Tensor<float>::Tensor(Tensor<float>&& tensor) noexcept {
+//移动构造函数：浅拷贝，使得资源所有权转移
+Tensor<float>::Tensor(Tensor<float>&& tensor) noexcept { //右值引用
   if (this != &tensor) {
     this->data_ = std::move(tensor.data_);
     this->raw_shapes_ = tensor.raw_shapes_;
   }
 }
-
+// 拷贝赋值
 Tensor<float>& Tensor<float>::operator=(Tensor<float>&& tensor) noexcept {
   if (this != &tensor) {
     this->data_ = std::move(tensor.data_);
@@ -166,6 +166,16 @@ void Tensor<float>::Padding(const std::vector<uint32_t>& pads,
   uint32_t pad_cols2 = pads.at(3);  // right
 
   // 请补充代码
+  uint32_t new_rows = this->rows() + pad_rows1 + pad_rows2;
+  uint32_t new_cols = this->cols() + pad_cols1 + pad_cols2;
+  arma::fcube new_data(new_rows, new_cols, this->channels(), arma::fill::value(padding_value));
+
+  for (uint32_t c = 0; c < this->channels(); ++c) {
+    new_data.slice(c).submat(pad_rows1, pad_cols1, pad_rows1 + this->rows() - 1, pad_cols1 + this->cols() - 1) = this->data_.slice(c);
+  }
+
+  this->data_ = std::move(new_data);//妙啊
+  this->raw_shapes_ = {this->channels(), new_rows, new_cols};
 }
 
 void Tensor<float>::Fill(float value) {
@@ -204,6 +214,15 @@ void Tensor<float>::Show() {
 void Tensor<float>::Flatten(bool row_major) {
   CHECK(!this->data_.empty());
   // 请补充代码
+if (row_major) {
+  std::vector<float> values = this->values(true);
+  this->data_.set_size(1, this->size(), 1);
+  this->raw_shapes_ = {this->size()};
+  this->Fill(values, true);
+} else {
+  this->data_.set_size(1, this->size(), 1);
+  this->raw_shapes_ = {this->size()};
+}
 }
 
 void Tensor<float>::Rand() {

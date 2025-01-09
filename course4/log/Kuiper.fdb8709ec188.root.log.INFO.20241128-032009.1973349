@@ -1,0 +1,22 @@
+Log file created at: 2024/11/28 03:20:09
+Running on machine: fdb8709ec188
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20241128 03:20:09.818524 1973349 main.cpp:15] Start test...
+I20241128 03:20:09.830650 1973349 test_topo.cpp:93] pnnx_input_0
+I20241128 03:20:09.831591 1973349 test_topo.cpp:100] batch: 2
+I20241128 03:20:09.831634 1973349 test_topo.cpp:104] channel: 3 height: 16 cols: 16
+I20241128 03:20:09.831662 1973349 test_topo.cpp:104] channel: 3 height: 16 cols: 16
+I20241128 03:20:09.831668 1973349 test_topo.cpp:93] op1
+I20241128 03:20:09.831676 1973349 test_topo.cpp:100] batch: 2
+I20241128 03:20:09.831682 1973349 test_topo.cpp:104] channel: 32 height: 16 cols: 16
+I20241128 03:20:09.831688 1973349 test_topo.cpp:104] channel: 32 height: 16 cols: 16
+I20241128 03:20:09.831693 1973349 test_topo.cpp:93] op3
+I20241128 03:20:09.831699 1973349 test_topo.cpp:100] batch: 2
+I20241128 03:20:09.831705 1973349 test_topo.cpp:104] channel: 64 height: 16 cols: 16
+I20241128 03:20:09.831712 1973349 test_topo.cpp:104] channel: 64 height: 16 cols: 16
+I20241128 03:20:09.831717 1973349 test_topo.cpp:93] op5
+I20241128 03:20:09.831722 1973349 test_topo.cpp:100] batch: 2
+I20241128 03:20:09.831727 1973349 test_topo.cpp:104] channel: 128 height: 16 cols: 16
+I20241128 03:20:09.831733 1973349 test_topo.cpp:104] channel: 128 height: 16 cols: 16
+I20241128 03:20:09.831738 1973349 test_topo.cpp:93] pnnx_output_0

@@ -1,0 +1,5 @@
+Log file created at: 2024/12/20 02:51:42
+Running on machine: fdb8709ec188
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+F20241220 02:51:42.408638 126171 parse_expression.cpp:180] Unknown token type: -2

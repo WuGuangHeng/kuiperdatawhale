@@ -100,6 +100,7 @@ private:
                   const std::shared_ptr<RuntimeOperator> &runtime_operator);
 
   void ReverseTopo(const std::shared_ptr<RuntimeOperator> &root_op);
+  void Topo();
 
 private:
   enum class GraphState {

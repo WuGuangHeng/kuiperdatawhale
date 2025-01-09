@@ -57,7 +57,7 @@ InferStatus Layer::Forward(
 InferStatus Layer::Forward() {
   LOG_IF(FATAL, this->runtime_operator_.expired())
       << "Runtime operator is expired or nullptr";
-  const auto& runtime_operator = this->runtime_operator_.lock();
+  const auto& runtime_operator = this->runtime_operator_.lock(); //调用lock()函数返回一个shared_ptr对象
   // 准备节点layer计算所需要的输入
   const std::vector<std::shared_ptr<RuntimeOperand>>& input_operand_datas =
       runtime_operator->input_operands_seq;

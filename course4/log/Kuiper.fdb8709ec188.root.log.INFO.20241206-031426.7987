@@ -1,0 +1,12 @@
+Log file created at: 2024/12/06 03:14:26
+Running on machine: fdb8709ec188
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20241206 03:14:26.019699  7987 main.cpp:15] Start test...
+I20241206 03:14:26.020701  7987 test_topo.cpp:40] Index: 0 Name: pnnx_input_0
+I20241206 03:14:26.020725  7987 test_topo.cpp:40] Index: 1 Name: op1
+I20241206 03:14:26.020730  7987 test_topo.cpp:40] Index: 2 Name: op3
+I20241206 03:14:26.020736  7987 test_topo.cpp:40] Index: 3 Name: op5
+I20241206 03:14:26.020741  7987 test_topo.cpp:40] Index: 4 Name: op4
+I20241206 03:14:26.020747  7987 test_topo.cpp:40] Index: 5 Name: pnnx_expr_0
+I20241206 03:14:26.020752  7987 test_topo.cpp:40] Index: 6 Name: pnnx_output_0

@@ -1,0 +1,18 @@
+Log file created at: 2024/11/18 09:18:39
+Running on machine: fdb8709ec188
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20241118 09:18:39.295014 3069702 main.cpp:15] Start test...
+I20241118 09:18:39.295545 3069702 test_ir.cpp:87] OP Name: linear
+I20241118 09:18:39.295560 3069702 test_ir.cpp:88] OP Inputs
+I20241118 09:18:39.295567 3069702 test_ir.cpp:90] Input name: 0 shape: 1 x 32
+I20241118 09:18:39.295573 3069702 test_ir.cpp:94] OP Output
+I20241118 09:18:39.295578 3069702 test_ir.cpp:96] Output name: 1 shape: 1 x 128
+I20241118 09:18:39.295584 3069702 test_ir.cpp:100] Params
+I20241118 09:18:39.295590 3069702 test_ir.cpp:102] bias type 1
+I20241118 09:18:39.295595 3069702 test_ir.cpp:102] in_features type 2
+I20241118 09:18:39.295600 3069702 test_ir.cpp:102] out_features type 2
+I20241118 09:18:39.295606 3069702 test_ir.cpp:105] Weight: 
+I20241118 09:18:39.295611 3069702 test_ir.cpp:107] bias : 128 type 1
+I20241118 09:18:39.295617 3069702 test_ir.cpp:107] weight : 128 x 32 type 1
+I20241118 09:18:39.295624 3069702 test_ir.cpp:110] ---------------------------------------------

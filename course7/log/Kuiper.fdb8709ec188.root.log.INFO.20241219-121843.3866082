@@ -1,0 +1,5 @@
+Log file created at: 2024/12/19 12:18:43
+Running on machine: fdb8709ec188
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20241219 12:18:43.288394 3866082 main.cpp:15] Start test...

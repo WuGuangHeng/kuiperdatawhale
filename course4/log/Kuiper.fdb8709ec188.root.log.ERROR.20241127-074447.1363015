@@ -1,0 +1,5 @@
+Log file created at: 2024/11/27 07:44:47
+Running on machine: fdb8709ec188
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E20241127 07:44:47.770090 1363015 runtime_ir.cpp:150] Can not find the param path or bin path: course4/model_file/resnet18_batch1.param course4/model_file/resnet18_batch1.pnnx.bin

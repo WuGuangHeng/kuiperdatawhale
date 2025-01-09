@@ -9,10 +9,10 @@
 #include <vector>
 
 namespace kuiper_infer {
-template <typename T = float>
+template <typename T = float> //泛化模板
 class Tensor {};
 
-template <>
+template <> //模板特化
 class Tensor<uint8_t> {
   // 待实现
 };

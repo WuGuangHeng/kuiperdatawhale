@@ -1,0 +1,33 @@
+Log file created at: 2024/11/18 09:21:17
+Running on machine: fdb8709ec188
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20241118 09:21:17.320752 3071124 main.cpp:15] Start test...
+I20241118 09:21:17.321429 3071124 test_ir.cpp:150] op name: pnnx_input_0 type: pnnx.Input
+I20241118 09:21:17.321444 3071124 test_ir.cpp:151] attribute:
+I20241118 09:21:17.321449 3071124 test_ir.cpp:158] inputs: 
+I20241118 09:21:17.321455 3071124 test_ir.cpp:164] outputs: 
+I20241118 09:21:17.321460 3071124 test_ir.cpp:166] name: linear
+I20241118 09:21:17.321465 3071124 test_ir.cpp:168] --------------------------------------
+I20241118 09:21:17.321470 3071124 test_ir.cpp:150] op name: linear type: nn.Linear
+I20241118 09:21:17.321475 3071124 test_ir.cpp:151] attribute:
+I20241118 09:21:17.321480 3071124 test_ir.cpp:153] bias type: 1 shape: 128
+I20241118 09:21:17.321486 3071124 test_ir.cpp:153] weight type: 1 shape: 128 x 32
+I20241118 09:21:17.321491 3071124 test_ir.cpp:158] inputs: 
+I20241118 09:21:17.321496 3071124 test_ir.cpp:160] name: pnnx_input_0 shape: 1 x 32
+I20241118 09:21:17.321503 3071124 test_ir.cpp:164] outputs: 
+I20241118 09:21:17.321508 3071124 test_ir.cpp:166] name: F.sigmoid_0
+I20241118 09:21:17.321513 3071124 test_ir.cpp:168] --------------------------------------
+I20241118 09:21:17.321518 3071124 test_ir.cpp:150] op name: F.sigmoid_0 type: F.sigmoid
+I20241118 09:21:17.321523 3071124 test_ir.cpp:151] attribute:
+I20241118 09:21:17.321528 3071124 test_ir.cpp:158] inputs: 
+I20241118 09:21:17.321533 3071124 test_ir.cpp:160] name: linear shape: 1 x 128
+I20241118 09:21:17.321539 3071124 test_ir.cpp:164] outputs: 
+I20241118 09:21:17.321544 3071124 test_ir.cpp:166] name: pnnx_output_0
+I20241118 09:21:17.321549 3071124 test_ir.cpp:168] --------------------------------------
+I20241118 09:21:17.321554 3071124 test_ir.cpp:150] op name: pnnx_output_0 type: pnnx.Output
+I20241118 09:21:17.321559 3071124 test_ir.cpp:151] attribute:
+I20241118 09:21:17.321565 3071124 test_ir.cpp:158] inputs: 
+I20241118 09:21:17.321570 3071124 test_ir.cpp:160] name: F.sigmoid_0 shape: 1 x 128
+I20241118 09:21:17.321576 3071124 test_ir.cpp:164] outputs: 
+I20241118 09:21:17.321581 3071124 test_ir.cpp:168] --------------------------------------

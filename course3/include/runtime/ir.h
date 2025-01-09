@@ -234,8 +234,8 @@ public:
     std::vector<Operand*> operands;
 
 private:
-    Graph(const Graph& rhs);
-    Graph& operator=(const Graph& rhs);
+    Graph(const Graph& rhs); //放在private里，不允许拷贝构造
+    Graph& operator=(const Graph& rhs); //放在private里，不允许赋值构造
 };
 
 } // namespace pnnx

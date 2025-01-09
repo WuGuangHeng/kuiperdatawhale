@@ -1,0 +1,5 @@
+Log file created at: 2024/12/26 08:57:57
+Running on machine: fdb8709ec188
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+F20241226 08:57:57.092259 619964 runtime_ir.cpp:304] Init graph failed!

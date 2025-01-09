@@ -1,0 +1,27 @@
+Log file created at: 2024/11/18 09:16:21
+Running on machine: fdb8709ec188
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20241118 09:16:21.713681 3068491 main.cpp:15] Start test...
+I20241118 09:16:21.714854 3068491 test_ir.cpp:53] OP Name: pnnx_input_0
+I20241118 09:16:21.715085 3068491 test_ir.cpp:54] OP Inputs
+I20241118 09:16:21.715164 3068491 test_ir.cpp:60] OP Output
+I20241118 09:16:21.715217 3068491 test_ir.cpp:62] Output name: 0 shape: 1 x 32
+I20241118 09:16:21.715268 3068491 test_ir.cpp:65] ---------------------------------------------
+I20241118 09:16:21.715320 3068491 test_ir.cpp:53] OP Name: linear
+I20241118 09:16:21.715368 3068491 test_ir.cpp:54] OP Inputs
+I20241118 09:16:21.715415 3068491 test_ir.cpp:56] Input name: 0 shape: 1 x 32
+I20241118 09:16:21.715463 3068491 test_ir.cpp:60] OP Output
+I20241118 09:16:21.715509 3068491 test_ir.cpp:62] Output name: 1 shape: 1 x 128
+I20241118 09:16:21.715559 3068491 test_ir.cpp:65] ---------------------------------------------
+I20241118 09:16:21.715610 3068491 test_ir.cpp:53] OP Name: F.sigmoid_0
+I20241118 09:16:21.715658 3068491 test_ir.cpp:54] OP Inputs
+I20241118 09:16:21.715704 3068491 test_ir.cpp:56] Input name: 1 shape: 1 x 128
+I20241118 09:16:21.715752 3068491 test_ir.cpp:60] OP Output
+I20241118 09:16:21.715837 3068491 test_ir.cpp:62] Output name: 2 shape: 1 x 128
+I20241118 09:16:21.715893 3068491 test_ir.cpp:65] ---------------------------------------------
+I20241118 09:16:21.715941 3068491 test_ir.cpp:53] OP Name: pnnx_output_0
+I20241118 09:16:21.716492 3068491 test_ir.cpp:54] OP Inputs
+I20241118 09:16:21.716553 3068491 test_ir.cpp:56] Input name: 2 shape: 1 x 128
+I20241118 09:16:21.716607 3068491 test_ir.cpp:60] OP Output
+I20241118 09:16:21.716655 3068491 test_ir.cpp:65] ---------------------------------------------

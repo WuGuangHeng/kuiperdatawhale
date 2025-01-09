@@ -1,0 +1,6 @@
+Log file created at: 2024/12/12 02:48:25
+Running on machine: fdb8709ec188
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E20241212 02:48:25.815501  4132 relu.cpp:68] The output tensor array in the relu layer has an empty tensor 0 th
+E20241212 02:48:25.822304  4132 sigmoid.cpp:68] The output tensor array in the sigmoid layer has an empty tensor 0 th

@@ -1,0 +1,6 @@
+Log file created at: 2024/12/26 08:54:03
+Running on machine: fdb8709ec188
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E20241226 08:54:03.088961 617672 runtime_ir.cpp:149] Can not find the param path or bin path: course8/model_file/resnet18_batch1.pnnx.param course8/model_file/resnet18_batch1.pnnx.bin
+F20241226 08:54:03.101064 617672 runtime_ir.cpp:304] Init graph failed!

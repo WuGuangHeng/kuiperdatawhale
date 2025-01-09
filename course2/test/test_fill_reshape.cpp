@@ -12,7 +12,7 @@ TEST(test_fill_reshape, fill1) {
   for (int i = 0; i < 24; ++i) {
     values.at(i) = float(i + 1);
   }
-  f1.Fill(values);
+  f1.Fill(values, true);
   f1.Show();
 }
 

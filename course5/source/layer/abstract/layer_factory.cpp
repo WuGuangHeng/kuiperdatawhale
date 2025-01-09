@@ -35,7 +35,7 @@ void LayerRegisterer::RegisterCreator(const std::string& layer_type,
 }
 
 LayerRegisterer::CreateRegistry& LayerRegisterer::Registry() {
-  static CreateRegistry* kRegistry = new CreateRegistry();
+  static CreateRegistry* kRegistry = new CreateRegistry(); //局部静态变量（C++11特性），全局注册表registry变量是一个唯一的实例kRegistry，无论该函数被调用多少次，都会返回同一个对象
   CHECK(kRegistry != nullptr) << "Global layer register init failed!";
   return *kRegistry;
 }

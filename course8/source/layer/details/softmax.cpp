@@ -29,7 +29,7 @@
 #include "utils/math/fmath.hpp"
 namespace kuiper_infer {
 #define POS_INDEX(outer_size, inner_size, axis_size) \
-  outer_size* axis_sizes* inner_sizes + axis_size* inner_sizes + inner_size;
+  outer_size* axis_sizes* inner_sizes + axis_size* inner_sizes + inner_size;//?
 
 SoftmaxLayer::SoftmaxLayer(int dim)
     : NonParamLayer("Softmax"), softmax_dim_(dim) {}

@@ -1,0 +1,13 @@
+Log file created at: 2024/11/14 13:09:15
+Running on machine: fdb8709ec188
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20241114 13:09:15.053987 195105 main.cpp:15] Start test...
+I20241114 13:09:15.056077 195105 test_create_tensor.cpp:60] -----------------------Tensor3D 2-----------------------
+I20241114 13:09:15.056115 195105 test_create_tensor.cpp:61] raw shapes size: 2
+I20241114 13:09:15.056121 195105 test_create_tensor.cpp:65] data rows: 2
+I20241114 13:09:15.056128 195105 test_create_tensor.cpp:66] data cols: 3
+I20241114 13:09:15.056133 195105 tensor.cpp:199] Channel: 0
+I20241114 13:09:15.056138 195105 tensor.cpp:200] 
+   1.0000   1.0000   1.0000
+   1.0000   1.0000   1.0000

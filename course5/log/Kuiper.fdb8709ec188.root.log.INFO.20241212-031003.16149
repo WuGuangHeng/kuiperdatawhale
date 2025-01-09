@@ -1,0 +1,8 @@
+Log file created at: 2024/12/12 03:10:03
+Running on machine: fdb8709ec188
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20241212 03:10:03.957211 16149 main.cpp:15] Start test...
+I20241212 03:10:03.957651 16149 test_relu.cpp:42] nn.ReLU
+I20241212 03:10:03.957674 16149 test_relu.cpp:42] nn.Sigmoid
+I20241212 03:10:03.957684 16149 test_relu.cpp:42] test_type

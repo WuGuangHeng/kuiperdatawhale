@@ -1,0 +1,10 @@
+Log file created at: 2024/12/20 12:24:47
+Running on machine: fdb8709ec188
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20241220 12:24:47.535969 425916 main.cpp:15] Start test...
+I20241220 12:24:47.536862 425916 test_expression.cpp:118] 0
+I20241220 12:24:47.536893 425916 test_expression.cpp:118] 1
+I20241220 12:24:47.536909 425916 test_expression.cpp:114] Mul
+I20241220 12:24:47.536923 425916 test_expression.cpp:118] 2
+I20241220 12:24:47.536938 425916 test_expression.cpp:116] Add

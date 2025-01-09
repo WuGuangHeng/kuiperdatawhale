@@ -1,0 +1,17 @@
+Log file created at: 2024/11/18 09:19:46
+Running on machine: fdb8709ec188
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20241118 09:19:46.477716 3070306 main.cpp:15] Start test...
+I20241118 09:19:46.478370 3070306 test_ir.cpp:128] Operand Name: #0
+I20241118 09:19:46.478387 3070306 test_ir.cpp:129] Customers: 
+I20241118 09:19:46.478394 3070306 test_ir.cpp:131] linear
+I20241118 09:19:46.478399 3070306 test_ir.cpp:134] Producer: pnnx_input_0
+I20241118 09:19:46.478403 3070306 test_ir.cpp:128] Operand Name: #1
+I20241118 09:19:46.478408 3070306 test_ir.cpp:129] Customers: 
+I20241118 09:19:46.478413 3070306 test_ir.cpp:131] F.sigmoid_0
+I20241118 09:19:46.478418 3070306 test_ir.cpp:134] Producer: linear
+I20241118 09:19:46.478425 3070306 test_ir.cpp:128] Operand Name: #2
+I20241118 09:19:46.478430 3070306 test_ir.cpp:129] Customers: 
+I20241118 09:19:46.478435 3070306 test_ir.cpp:131] pnnx_output_0
+I20241118 09:19:46.478439 3070306 test_ir.cpp:134] Producer: F.sigmoid_0

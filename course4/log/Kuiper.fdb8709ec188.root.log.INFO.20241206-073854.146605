@@ -1,0 +1,101 @@
+Log file created at: 2024/12/06 07:38:54
+Running on machine: fdb8709ec188
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20241206 07:38:54.885003 146605 main.cpp:15] Start test...
+I20241206 07:38:55.000065 146605 test_topo.cpp:22] Index: 0 Type: pnnx.Input Name: pnnx_input_0
+I20241206 07:38:55.000130 146605 test_topo.cpp:22] Index: 1 Type: nn.Conv2d Name: convbn2d_0
+I20241206 07:38:55.000169 146605 test_topo.cpp:22] Index: 2 Type: nn.ReLU Name: relu
+I20241206 07:38:55.000181 146605 test_topo.cpp:22] Index: 3 Type: nn.MaxPool2d Name: maxpool
+I20241206 07:38:55.000190 146605 test_topo.cpp:22] Index: 4 Type: nn.Conv2d Name: convbn2d_1
+I20241206 07:38:55.000198 146605 test_topo.cpp:22] Index: 5 Type: nn.ReLU Name: layer1.0.relu
+I20241206 07:38:55.000207 146605 test_topo.cpp:22] Index: 6 Type: nn.Conv2d Name: convbn2d_2
+I20241206 07:38:55.000216 146605 test_topo.cpp:22] Index: 7 Type: pnnx.Expression Name: pnnx_expr_14
+I20241206 07:38:55.000223 146605 test_topo.cpp:22] Index: 8 Type: nn.ReLU Name: pnnx_unique_0
+I20241206 07:38:55.000232 146605 test_topo.cpp:22] Index: 9 Type: nn.Conv2d Name: convbn2d_3
+I20241206 07:38:55.000241 146605 test_topo.cpp:22] Index: 10 Type: nn.ReLU Name: layer1.1.relu
+I20241206 07:38:55.000249 146605 test_topo.cpp:22] Index: 11 Type: nn.Conv2d Name: convbn2d_4
+I20241206 07:38:55.000260 146605 test_topo.cpp:22] Index: 12 Type: pnnx.Expression Name: pnnx_expr_12
+I20241206 07:38:55.000269 146605 test_topo.cpp:22] Index: 13 Type: nn.ReLU Name: pnnx_unique_1
+I20241206 07:38:55.000278 146605 test_topo.cpp:22] Index: 14 Type: nn.Conv2d Name: convbn2d_5
+I20241206 07:38:55.000290 146605 test_topo.cpp:22] Index: 15 Type: nn.Conv2d Name: convbn2d_7
+I20241206 07:38:55.000299 146605 test_topo.cpp:22] Index: 16 Type: nn.ReLU Name: layer2.0.relu
+I20241206 07:38:55.000308 146605 test_topo.cpp:22] Index: 17 Type: nn.Conv2d Name: convbn2d_6
+I20241206 07:38:55.000317 146605 test_topo.cpp:22] Index: 18 Type: pnnx.Expression Name: pnnx_expr_10
+I20241206 07:38:55.000327 146605 test_topo.cpp:22] Index: 19 Type: nn.ReLU Name: pnnx_unique_2
+I20241206 07:38:55.000336 146605 test_topo.cpp:22] Index: 20 Type: nn.Conv2d Name: convbn2d_8
+I20241206 07:38:55.000344 146605 test_topo.cpp:22] Index: 21 Type: nn.ReLU Name: layer2.1.relu
+I20241206 07:38:55.000352 146605 test_topo.cpp:22] Index: 22 Type: nn.Conv2d Name: convbn2d_9
+I20241206 07:38:55.000361 146605 test_topo.cpp:22] Index: 23 Type: pnnx.Expression Name: pnnx_expr_8
+I20241206 07:38:55.000370 146605 test_topo.cpp:22] Index: 24 Type: nn.ReLU Name: pnnx_unique_3
+I20241206 07:38:55.000378 146605 test_topo.cpp:22] Index: 25 Type: nn.Conv2d Name: convbn2d_10
+I20241206 07:38:55.000387 146605 test_topo.cpp:22] Index: 26 Type: nn.Conv2d Name: convbn2d_12
+I20241206 07:38:55.000396 146605 test_topo.cpp:22] Index: 27 Type: nn.ReLU Name: layer3.0.relu
+I20241206 07:38:55.000403 146605 test_topo.cpp:22] Index: 28 Type: nn.Conv2d Name: convbn2d_11
+I20241206 07:38:55.000412 146605 test_topo.cpp:22] Index: 29 Type: pnnx.Expression Name: pnnx_expr_6
+I20241206 07:38:55.000427 146605 test_topo.cpp:22] Index: 30 Type: nn.ReLU Name: pnnx_unique_4
+I20241206 07:38:55.000437 146605 test_topo.cpp:22] Index: 31 Type: nn.Conv2d Name: convbn2d_13
+I20241206 07:38:55.000444 146605 test_topo.cpp:22] Index: 32 Type: nn.ReLU Name: layer3.1.relu
+I20241206 07:38:55.000455 146605 test_topo.cpp:22] Index: 33 Type: nn.Conv2d Name: convbn2d_14
+I20241206 07:38:55.000465 146605 test_topo.cpp:22] Index: 34 Type: pnnx.Expression Name: pnnx_expr_4
+I20241206 07:38:55.000474 146605 test_topo.cpp:22] Index: 35 Type: nn.ReLU Name: pnnx_unique_5
+I20241206 07:38:55.000485 146605 test_topo.cpp:22] Index: 36 Type: nn.Conv2d Name: convbn2d_15
+I20241206 07:38:55.000494 146605 test_topo.cpp:22] Index: 37 Type: nn.Conv2d Name: convbn2d_17
+I20241206 07:38:55.000509 146605 test_topo.cpp:22] Index: 38 Type: nn.ReLU Name: layer4.0.relu
+I20241206 07:38:55.000516 146605 test_topo.cpp:22] Index: 39 Type: nn.Conv2d Name: convbn2d_16
+I20241206 07:38:55.000525 146605 test_topo.cpp:22] Index: 40 Type: pnnx.Expression Name: pnnx_expr_2
+I20241206 07:38:55.000535 146605 test_topo.cpp:22] Index: 41 Type: nn.ReLU Name: pnnx_unique_6
+I20241206 07:38:55.000568 146605 test_topo.cpp:22] Index: 42 Type: nn.Conv2d Name: convbn2d_18
+I20241206 07:38:55.000654 146605 test_topo.cpp:22] Index: 43 Type: nn.ReLU Name: layer4.1.relu
+I20241206 07:38:55.000665 146605 test_topo.cpp:22] Index: 44 Type: nn.Conv2d Name: convbn2d_19
+I20241206 07:38:55.000675 146605 test_topo.cpp:22] Index: 45 Type: pnnx.Expression Name: pnnx_expr_0
+I20241206 07:38:55.000684 146605 test_topo.cpp:22] Index: 46 Type: nn.ReLU Name: pnnx_unique_7
+I20241206 07:38:55.000691 146605 test_topo.cpp:22] Index: 47 Type: nn.AdaptiveAvgPool2d Name: avgpool
+I20241206 07:38:55.000699 146605 test_topo.cpp:22] Index: 48 Type: torch.flatten Name: torch.flatten_0
+I20241206 07:38:55.000707 146605 test_topo.cpp:22] Index: 49 Type: nn.Linear Name: fc
+I20241206 07:38:55.000715 146605 test_topo.cpp:22] Index: 50 Type: pnnx.Output Name: pnnx_output_0
+I20241206 07:38:55.004570 146605 test_topo.cpp:46] Index: 0 Name: pnnx_input_0
+I20241206 07:38:55.004601 146605 test_topo.cpp:46] Index: 1 Name: op1
+I20241206 07:38:55.004609 146605 test_topo.cpp:46] Index: 2 Name: op3
+I20241206 07:38:55.004614 146605 test_topo.cpp:46] Index: 3 Name: op4
+I20241206 07:38:55.004621 146605 test_topo.cpp:46] Index: 4 Name: op5
+I20241206 07:38:55.004626 146605 test_topo.cpp:46] Index: 5 Name: pnnx_expr_0
+I20241206 07:38:55.004632 146605 test_topo.cpp:46] Index: 6 Name: pnnx_output_0
+I20241206 07:38:55.004861 146605 test_topo.cpp:63] operator name: pnnx_input_0
+I20241206 07:38:55.004881 146605 test_topo.cpp:65] output: op1
+I20241206 07:38:55.004891 146605 test_topo.cpp:67] -------------------------
+I20241206 07:38:55.004899 146605 test_topo.cpp:63] operator name: op1
+I20241206 07:38:55.004909 146605 test_topo.cpp:65] output: op3
+I20241206 07:38:55.004918 146605 test_topo.cpp:67] -------------------------
+I20241206 07:38:55.004928 146605 test_topo.cpp:63] operator name: op3
+I20241206 07:38:55.004935 146605 test_topo.cpp:65] output: op4
+I20241206 07:38:55.004942 146605 test_topo.cpp:65] output: op5
+I20241206 07:38:55.004949 146605 test_topo.cpp:67] -------------------------
+I20241206 07:38:55.004956 146605 test_topo.cpp:63] operator name: op4
+I20241206 07:38:55.004963 146605 test_topo.cpp:65] output: pnnx_expr_0
+I20241206 07:38:55.004971 146605 test_topo.cpp:67] -------------------------
+I20241206 07:38:55.004976 146605 test_topo.cpp:63] operator name: op5
+I20241206 07:38:55.004983 146605 test_topo.cpp:65] output: pnnx_expr_0
+I20241206 07:38:55.004992 146605 test_topo.cpp:67] -------------------------
+I20241206 07:38:55.004998 146605 test_topo.cpp:63] operator name: pnnx_expr_0
+I20241206 07:38:55.005004 146605 test_topo.cpp:65] output: pnnx_output_0
+I20241206 07:38:55.005012 146605 test_topo.cpp:67] -------------------------
+I20241206 07:38:55.005017 146605 test_topo.cpp:63] operator name: pnnx_output_0
+I20241206 07:38:55.005024 146605 test_topo.cpp:67] -------------------------
+I20241206 07:38:55.010535 146605 test_topo.cpp:99] pnnx_input_0
+I20241206 07:38:55.010630 146605 test_topo.cpp:106] batch: 2
+I20241206 07:38:55.010641 146605 test_topo.cpp:110] channel: 3 height: 16 cols: 16
+I20241206 07:38:55.010653 146605 test_topo.cpp:110] channel: 3 height: 16 cols: 16
+I20241206 07:38:55.010663 146605 test_topo.cpp:99] op1
+I20241206 07:38:55.010672 146605 test_topo.cpp:106] batch: 2
+I20241206 07:38:55.010681 146605 test_topo.cpp:110] channel: 32 height: 16 cols: 16
+I20241206 07:38:55.010690 146605 test_topo.cpp:110] channel: 32 height: 16 cols: 16
+I20241206 07:38:55.010699 146605 test_topo.cpp:99] op3
+I20241206 07:38:55.010708 146605 test_topo.cpp:106] batch: 2
+I20241206 07:38:55.010717 146605 test_topo.cpp:110] channel: 64 height: 16 cols: 16
+I20241206 07:38:55.010726 146605 test_topo.cpp:110] channel: 64 height: 16 cols: 16
+I20241206 07:38:55.010736 146605 test_topo.cpp:99] op5
+I20241206 07:38:55.010744 146605 test_topo.cpp:106] batch: 2
+I20241206 07:38:55.010753 146605 test_topo.cpp:110] channel: 128 height: 16 cols: 16
+I20241206 07:38:55.010766 146605 test_topo.cpp:110] channel: 128 height: 16 cols: 16
+I20241206 07:38:55.010774 146605 test_topo.cpp:99] pnnx_output_0

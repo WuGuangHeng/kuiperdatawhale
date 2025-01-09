@@ -1,0 +1,11 @@
+Log file created at: 2024/12/20 02:54:37
+Running on machine: fdb8709ec188
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20241220 02:54:37.492044 127946 main.cpp:15] Start test...
+I20241220 02:54:37.493281 127946 test_expression.cpp:118] 0
+I20241220 02:54:37.493322 127946 test_expression.cpp:118] 1
+I20241220 02:54:37.493330 127946 test_expression.cpp:114] Mul
+I20241220 02:54:37.493337 127946 test_expression.cpp:118] 2
+I20241220 02:54:37.493357 127946 test_expression.cpp:116] Add
+F20241220 02:54:37.495388 127946 expression.cpp:96] Unknown operator type: -2

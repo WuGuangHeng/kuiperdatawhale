@@ -1,0 +1,13 @@
+Log file created at: 2024/12/12 12:41:35
+Running on machine: fdb8709ec188
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20241212 12:41:35.118992 314763 main.cpp:15] Start test...
+I20241212 12:41:35.137006 314763 tensor.cpp:200] Channel: 0
+I20241212 12:41:35.137096 314763 tensor.cpp:201] 
+   2.2000e+02   2.5600e+02
+   3.6400e+02   4.0000e+02
+I20241212 12:41:35.137337 314763 tensor.cpp:200] Channel: 1
+I20241212 12:41:35.137357 314763 tensor.cpp:201] 
+   2.2000e+02   2.5600e+02
+   3.6400e+02   4.0000e+02

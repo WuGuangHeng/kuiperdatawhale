@@ -1,0 +1,42 @@
+Log file created at: 2024/12/12 02:54:08
+Running on machine: fdb8709ec188
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20241212 02:54:08.165086  7468 main.cpp:15] Start test...
+I20241212 02:54:08.165912  7468 test_relu.cpp:78] [cube slice: 0]
+  -1.1871  -0.5550  -0.0452   0.6550
+   0.2898  -0.7782  -2.1828  -0.4291
+  -0.2989  -2.6356  -0.3629  -3.2016
+  -0.4051  -0.2162  -1.6253  -0.5076
+
+[cube slice: 1]
+  -1.3553  -1.2436  -2.1618  -0.5841
+   0.3329  -1.1272  -0.7744   0.1118
+  -1.2674  -0.5953  -0.0715  -0.1380
+  -1.6120  -0.4387   0.9152  -2.4853
+
+[cube slice: 2]
+   1.4332  -1.4602  -0.0999   0.5014
+  -0.4510  -1.8933  -0.7026   0.4615
+  -0.4585  -2.3902   0.8351  -0.5237
+  -0.3339  -0.6780   0.1748  -1.2742
+E20241212 02:54:08.166026  7468 relu.cpp:68] The output tensor array in the relu layer has an empty tensor 0 th
+I20241212 02:54:08.167205  7468 tensor.cpp:200] Channel: 0
+I20241212 02:54:08.167237  7468 tensor.cpp:201] 
+        0        0        0   0.6550
+   0.2898        0        0        0
+        0        0        0        0
+        0        0        0        0
+I20241212 02:54:08.171293  7468 tensor.cpp:200] Channel: 1
+I20241212 02:54:08.171316  7468 tensor.cpp:201] 
+        0        0        0        0
+   0.3329        0        0   0.1118
+        0        0        0        0
+        0        0   0.9152        0
+I20241212 02:54:08.171339  7468 tensor.cpp:200] Channel: 2
+I20241212 02:54:08.171348  7468 tensor.cpp:201] 
+   1.4332        0        0   0.5014
+        0        0        0   0.4615
+        0        0   0.8351        0
+        0        0   0.1748        0
+E20241212 02:54:08.171444  7468 sigmoid.cpp:68] The output tensor array in the sigmoid layer has an empty tensor 0 th

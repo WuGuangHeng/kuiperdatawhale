@@ -1,0 +1,56 @@
+Log file created at: 2024/12/06 03:12:43
+Running on machine: fdb8709ec188
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20241206 03:12:43.016144  7078 main.cpp:15] Start test...
+I20241206 03:12:43.154889  7078 test_topo.cpp:22] Index: 0 Type: pnnx.Input Name: pnnx_input_0
+I20241206 03:12:43.154946  7078 test_topo.cpp:22] Index: 1 Type: nn.Conv2d Name: convbn2d_0
+I20241206 03:12:43.154953  7078 test_topo.cpp:22] Index: 2 Type: nn.ReLU Name: relu
+I20241206 03:12:43.154956  7078 test_topo.cpp:22] Index: 3 Type: nn.MaxPool2d Name: maxpool
+I20241206 03:12:43.154959  7078 test_topo.cpp:22] Index: 4 Type: nn.Conv2d Name: convbn2d_1
+I20241206 03:12:43.154963  7078 test_topo.cpp:22] Index: 5 Type: nn.ReLU Name: layer1.0.relu
+I20241206 03:12:43.154965  7078 test_topo.cpp:22] Index: 6 Type: nn.Conv2d Name: convbn2d_2
+I20241206 03:12:43.154968  7078 test_topo.cpp:22] Index: 7 Type: pnnx.Expression Name: pnnx_expr_14
+I20241206 03:12:43.154971  7078 test_topo.cpp:22] Index: 8 Type: nn.ReLU Name: pnnx_unique_0
+I20241206 03:12:43.154974  7078 test_topo.cpp:22] Index: 9 Type: nn.Conv2d Name: convbn2d_3
+I20241206 03:12:43.154976  7078 test_topo.cpp:22] Index: 10 Type: nn.ReLU Name: layer1.1.relu
+I20241206 03:12:43.154979  7078 test_topo.cpp:22] Index: 11 Type: nn.Conv2d Name: convbn2d_4
+I20241206 03:12:43.154983  7078 test_topo.cpp:22] Index: 12 Type: pnnx.Expression Name: pnnx_expr_12
+I20241206 03:12:43.154986  7078 test_topo.cpp:22] Index: 13 Type: nn.ReLU Name: pnnx_unique_1
+I20241206 03:12:43.154989  7078 test_topo.cpp:22] Index: 14 Type: nn.Conv2d Name: convbn2d_7
+I20241206 03:12:43.154992  7078 test_topo.cpp:22] Index: 15 Type: nn.Conv2d Name: convbn2d_5
+I20241206 03:12:43.154995  7078 test_topo.cpp:22] Index: 16 Type: nn.ReLU Name: layer2.0.relu
+I20241206 03:12:43.154999  7078 test_topo.cpp:22] Index: 17 Type: nn.Conv2d Name: convbn2d_6
+I20241206 03:12:43.155001  7078 test_topo.cpp:22] Index: 18 Type: pnnx.Expression Name: pnnx_expr_10
+I20241206 03:12:43.155004  7078 test_topo.cpp:22] Index: 19 Type: nn.ReLU Name: pnnx_unique_2
+I20241206 03:12:43.155007  7078 test_topo.cpp:22] Index: 20 Type: nn.Conv2d Name: convbn2d_8
+I20241206 03:12:43.155010  7078 test_topo.cpp:22] Index: 21 Type: nn.ReLU Name: layer2.1.relu
+I20241206 03:12:43.155014  7078 test_topo.cpp:22] Index: 22 Type: nn.Conv2d Name: convbn2d_9
+I20241206 03:12:43.155016  7078 test_topo.cpp:22] Index: 23 Type: pnnx.Expression Name: pnnx_expr_8
+I20241206 03:12:43.155019  7078 test_topo.cpp:22] Index: 24 Type: nn.ReLU Name: pnnx_unique_3
+I20241206 03:12:43.155022  7078 test_topo.cpp:22] Index: 25 Type: nn.Conv2d Name: convbn2d_12
+I20241206 03:12:43.155025  7078 test_topo.cpp:22] Index: 26 Type: nn.Conv2d Name: convbn2d_10
+I20241206 03:12:43.155028  7078 test_topo.cpp:22] Index: 27 Type: nn.ReLU Name: layer3.0.relu
+I20241206 03:12:43.155031  7078 test_topo.cpp:22] Index: 28 Type: nn.Conv2d Name: convbn2d_11
+I20241206 03:12:43.155035  7078 test_topo.cpp:22] Index: 29 Type: pnnx.Expression Name: pnnx_expr_6
+I20241206 03:12:43.155036  7078 test_topo.cpp:22] Index: 30 Type: nn.ReLU Name: pnnx_unique_4
+I20241206 03:12:43.155040  7078 test_topo.cpp:22] Index: 31 Type: nn.Conv2d Name: convbn2d_13
+I20241206 03:12:43.155043  7078 test_topo.cpp:22] Index: 32 Type: nn.ReLU Name: layer3.1.relu
+I20241206 03:12:43.155046  7078 test_topo.cpp:22] Index: 33 Type: nn.Conv2d Name: convbn2d_14
+I20241206 03:12:43.155050  7078 test_topo.cpp:22] Index: 34 Type: pnnx.Expression Name: pnnx_expr_4
+I20241206 03:12:43.155052  7078 test_topo.cpp:22] Index: 35 Type: nn.ReLU Name: pnnx_unique_5
+I20241206 03:12:43.155055  7078 test_topo.cpp:22] Index: 36 Type: nn.Conv2d Name: convbn2d_17
+I20241206 03:12:43.155058  7078 test_topo.cpp:22] Index: 37 Type: nn.Conv2d Name: convbn2d_15
+I20241206 03:12:43.155061  7078 test_topo.cpp:22] Index: 38 Type: nn.ReLU Name: layer4.0.relu
+I20241206 03:12:43.155064  7078 test_topo.cpp:22] Index: 39 Type: nn.Conv2d Name: convbn2d_16
+I20241206 03:12:43.155067  7078 test_topo.cpp:22] Index: 40 Type: pnnx.Expression Name: pnnx_expr_2
+I20241206 03:12:43.155071  7078 test_topo.cpp:22] Index: 41 Type: nn.ReLU Name: pnnx_unique_6
+I20241206 03:12:43.155073  7078 test_topo.cpp:22] Index: 42 Type: nn.Conv2d Name: convbn2d_18
+I20241206 03:12:43.155076  7078 test_topo.cpp:22] Index: 43 Type: nn.ReLU Name: layer4.1.relu
+I20241206 03:12:43.155117  7078 test_topo.cpp:22] Index: 44 Type: nn.Conv2d Name: convbn2d_19
+I20241206 03:12:43.155123  7078 test_topo.cpp:22] Index: 45 Type: pnnx.Expression Name: pnnx_expr_0
+I20241206 03:12:43.155128  7078 test_topo.cpp:22] Index: 46 Type: nn.ReLU Name: pnnx_unique_7
+I20241206 03:12:43.155133  7078 test_topo.cpp:22] Index: 47 Type: nn.AdaptiveAvgPool2d Name: avgpool
+I20241206 03:12:43.155136  7078 test_topo.cpp:22] Index: 48 Type: torch.flatten Name: torch.flatten_0
+I20241206 03:12:43.155139  7078 test_topo.cpp:22] Index: 49 Type: nn.Linear Name: fc
+I20241206 03:12:43.155143  7078 test_topo.cpp:22] Index: 50 Type: pnnx.Output Name: pnnx_output_0

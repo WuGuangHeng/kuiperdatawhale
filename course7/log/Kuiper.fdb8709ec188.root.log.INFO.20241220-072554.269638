@@ -1,0 +1,11 @@
+Log file created at: 2024/12/20 07:25:54
+Running on machine: fdb8709ec188
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20241220 07:25:54.259038 269638 main.cpp:15] Start test...
+I20241220 07:25:54.259991 269638 test_expression.cpp:118] 0
+I20241220 07:25:54.260020 269638 test_expression.cpp:118] 1
+I20241220 07:25:54.260030 269638 test_expression.cpp:114] Mul
+I20241220 07:25:54.260066 269638 test_expression.cpp:118] 2
+I20241220 07:25:54.260076 269638 test_expression.cpp:116] Add
+F20241220 07:25:54.262331 269638 tensor_utils.cpp:101] Check failed: tensor == nullptr 

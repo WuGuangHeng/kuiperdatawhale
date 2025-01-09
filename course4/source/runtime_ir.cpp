@@ -238,16 +238,17 @@ void RuntimeGraph::Build(const std::string &input_name,
 
   // 构建拓扑顺序
   topo_operators_.clear();
-  for (const auto &[_, op] : operators_maps_) {
-    // 根据输入节点构建拓扑排序
-    if (op->type == "pnnx.Input" && !op->has_forward) {
-      this->ReverseTopo(op);
-    }
-  }
+  // for (const auto &[_, op] : operators_maps_) {
+  //   // 根据输入节点构建拓扑排序
+  //   if (op->type == "pnnx.Input" && !op->has_forward) {
+  //     this->ReverseTopo(op);
+  //   }
+  // }
+  this->Topo();
 
   CHECK(topo_operators_.size() == operators_.size())
       << "Build wrong topo queue";
-  std::reverse(topo_operators_.begin(), topo_operators_.end());
+  // std::reverse(topo_operators_.begin(), topo_operators_.end());
 
   graph_state_ = GraphState::Complete;
   input_name_ = input_name;
@@ -257,7 +258,11 @@ void RuntimeGraph::Build(const std::string &input_name,
     graph_ = nullptr;
   }
 }
-
+/*
+深度优先遍历，将当前节点的所有后继节点都遍历完之后再将当前节点加入到topo_operators_中
+递归的终止条件是当前节点的所有后继节点都已经遍历过了
+递归返回的是拓扑排序的逆序结果
+*/
 void RuntimeGraph::ReverseTopo(
     const std::shared_ptr<RuntimeOperator> &root_op) {
   CHECK(root_op != nullptr) << "current operator is nullptr";
@@ -274,6 +279,54 @@ void RuntimeGraph::ReverseTopo(
     CHECK_EQ(op->has_forward, true);
   }
   this->topo_operators_.push_back(root_op);
+}
+
+/*
+层序遍历（Kahn算法），将所有入度为0的节点加入到zero_in_degree_queue中，然后依次处理
+处理的过程中将当前节点的所有后继节点的入度减1，如果减1之后入度为0则加入到zero_in_degree_queue中
+直到zero_in_degree_queue为空
+层序遍历的结果就是拓扑排序的结果
+使用队列
+*/
+void RuntimeGraph::Topo() {
+  std::unordered_map<std::shared_ptr<RuntimeOperator>, int> in_degree;
+  std::deque<std::shared_ptr<RuntimeOperator>> zero_in_degree_queue;
+
+  // Initialize in-degree of each operator
+  for (const auto &op : this->operators_) {
+    in_degree[op] = 0;
+  }
+
+  // Calculate in-degree for each operator
+  for (const auto &op : this->operators_) {
+    for (const auto &[_, output_op] : op->output_operators) {
+      in_degree[output_op]++;
+    }
+  }
+
+  // Collect all operators with zero in-degree
+  for (const auto &op : this->operators_) {
+    if (in_degree[op] == 0) {
+      zero_in_degree_queue.push_back(op);
+    }
+  }
+
+  // Process operators with zero in-degree
+  while (!zero_in_degree_queue.empty()) {
+    auto op = zero_in_degree_queue.front();
+    zero_in_degree_queue.pop_front();
+    this->topo_operators_.push_back(op);
+
+    for (const auto &[_, output_op] : op->output_operators) {
+      in_degree[output_op]--;
+      if (in_degree[output_op] == 0) {
+        zero_in_degree_queue.push_back(output_op);
+      }
+    }
+  }
+
+  CHECK(topo_operators_.size() == operators_.size())
+      << "Topological sort failed, graph has cycles or disconnected components";
 }
 
 void RuntimeGraph::InitGraphAttrs(

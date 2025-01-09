@@ -1,0 +1,20 @@
+Log file created at: 2024/11/15 03:10:06
+Running on machine: fdb8709ec188
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20241115 03:10:06.631814 634525 main.cpp:15] Start test...
+I20241115 03:10:06.633203 634525 test_homework.cpp:11] -------------------before Flatten-------------------
+I20241115 03:10:06.633284 634525 tensor.cpp:209] Channel: 0
+I20241115 03:10:06.633340 634525 tensor.cpp:210] 
+        0        0        0        0
+        0        0        0        0
+        0        0        0        0
+I20241115 03:10:06.634428 634525 tensor.cpp:209] Channel: 1
+I20241115 03:10:06.634572 634525 tensor.cpp:210] 
+        0        0        0        0
+        0        0        0        0
+        0        0        0        0
+I20241115 03:10:06.634716 634525 test_homework.cpp:14] -------------------after Flatten-------------------
+I20241115 03:10:06.634793 634525 tensor.cpp:209] Channel: 0
+I20241115 03:10:06.634845 634525 tensor.cpp:210] 
+        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0        0
